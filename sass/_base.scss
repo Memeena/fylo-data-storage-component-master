@@ -1,0 +1,50 @@
+//variables
+$color-pale-blue: hsl(243, 100%, 93%);
+$color-grayish-blue: hsl(229, 7%, 55%);
+$color-dark-blue: hsl(228, 56%, 26%);
+$color-very-dark-blue: hsl(229, 57%, 11%);
+
+$color-linear-gradient-1: hsl(6, 100%, 80%);
+$color-linear-gradient-2: hsl(335, 100%, 65%);
+
+// FONT VARIABLES
+$font-primary: 'Raleway', sans-serif;
+
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;   //1rem = 10px
+}
+
+
+body{
+    font-family: $font-primary;
+    background-color: $color-very-dark-blue;
+    color:$color-pale-blue;
+    font-weight: 400;
+    background-image: url('../images/bg-desktop.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+@media (max-width: 56.25em) {
+    body {
+        background-position: center;
+    }
+}
+
+@media (max-width: 23.43em) {
+    body{
+        background-image: url('../images/bg-mobile.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
